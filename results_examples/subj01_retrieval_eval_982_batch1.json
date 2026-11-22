@@ -1,0 +1,21 @@
+{
+  "ckpt": "checkpoints/subj01/subj01_block8_epoch180.pth",
+  "epoch": 180,
+  "num_samples": 982,
+  "raw_prediction": {
+    "top1_full": 0.572301,
+    "top5_full": 0.821792,
+    "top1_300way_mean": 0.731079,
+    "top1_300way_sampler": "legacy_with_replacement",
+    "top1_300way_strict_mean": 0.713157,
+    "top1_300way_repeats": 100
+  },
+  "projector_prediction": {
+    "top1_full": 0.992872,
+    "top5_full": 1.0,
+    "top1_300way_mean": 0.997210,
+    "top1_300way_sampler": "legacy_with_replacement",
+    "top1_300way_strict_mean": 0.996701,
+    "top1_300way_repeats": 100
+  }
+}

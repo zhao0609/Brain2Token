@@ -1,0 +1,111 @@
+{
+  "subject": 1,
+  "data_path": "$NSD_DATA_PATH",
+  "splits": {
+    "train": {
+      "pattern": "$NSD_DATA_PATH/webdataset_avg_split/train/train_subj01_{0..17}.tar",
+      "num_tar_files": 18,
+      "tar_files": [
+        "train_subj01_0.tar",
+        "train_subj01_1.tar",
+        "train_subj01_2.tar",
+        "train_subj01_3.tar",
+        "train_subj01_4.tar",
+        "train_subj01_5.tar",
+        "train_subj01_6.tar",
+        "train_subj01_7.tar",
+        "train_subj01_8.tar",
+        "train_subj01_9.tar",
+        "train_subj01_10.tar",
+        "train_subj01_11.tar",
+        "train_subj01_12.tar",
+        "train_subj01_13.tar",
+        "train_subj01_14.tar",
+        "train_subj01_15.tar",
+        "train_subj01_16.tar",
+        "train_subj01_17.tar"
+      ],
+      "num_samples": 8559,
+      "num_unique_coco_ids": 8559,
+      "num_unique_sample_keys": 8559,
+      "first10_coco_ids": [
+        2516,
+        2537,
+        2538,
+        2548,
+        2549,
+        2553,
+        2569,
+        2591,
+        2598,
+        2613
+      ]
+    },
+    "val": {
+      "pattern": "$NSD_DATA_PATH/webdataset_avg_split/val/val_subj01_0.tar",
+      "num_tar_files": 1,
+      "tar_files": [
+        "val_subj01_0.tar"
+      ],
+      "num_samples": 300,
+      "num_unique_coco_ids": 300,
+      "num_unique_sample_keys": 300,
+      "first10_coco_ids": [
+        13,
+        27,
+        71,
+        85,
+        88,
+        93,
+        95,
+        99,
+        103,
+        110
+      ]
+    },
+    "test": {
+      "pattern": "$NSD_DATA_PATH/webdataset_avg_split/test/test_subj01_{0..1}.tar",
+      "num_tar_files": 2,
+      "tar_files": [
+        "test_subj01_0.tar",
+        "test_subj01_1.tar"
+      ],
+      "num_samples": 982,
+      "num_unique_coco_ids": 982,
+      "num_unique_sample_keys": 982,
+      "first10_coco_ids": [
+        2950,
+        2990,
+        3049,
+        3077,
+        3146,
+        3157,
+        3164,
+        3171,
+        3181,
+        3386
+      ]
+    }
+  },
+  "overlaps": {
+    "train_vs_val": {
+      "num_coco_id_overlap": 0,
+      "num_sample_key_overlap": 0,
+      "example_coco_ids": [],
+      "example_sample_keys": []
+    },
+    "train_vs_test": {
+      "num_coco_id_overlap": 0,
+      "num_sample_key_overlap": 0,
+      "example_coco_ids": [],
+      "example_sample_keys": []
+    },
+    "val_vs_test": {
+      "num_coco_id_overlap": 0,
+      "num_sample_key_overlap": 0,
+      "example_coco_ids": [],
+      "example_sample_keys": []
+    }
+  },
+  "pass_no_overlap": true
+}

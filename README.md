@@ -22,7 +22,8 @@ results_examples/               # example retrieval outputs
 requirements.txt
 ```
 
-NSD data, Qwen3-VL weights, and the trained Brain2Token weights are not included.
+NSD data and Qwen3-VL weights are not included. The trained Brain2Token weights are hosted
+externally (download link below) rather than in this repository because of their size.
 
 ## Environment
 
@@ -56,12 +57,15 @@ including periodic epoch checkpoints at `epoch_160.pth`, `epoch_180.pth`, etc.
 `docs/training_config_subj01.json` records the exact hyperparameters of the reported
 subject-1 block-8 run (seed 42, max LR 1e-4, batch size 4, 240 epochs, `mixup_pct` 0.33,
 loss weights λ_NCE = λ_MSE = λ_tok-cos = 1, diffusion prior disabled, projector enabled).
-The reference result below uses the fixed epoch-180 snapshot of this run; the fingerprint
-is listed only to identify the weights used for the reported numbers, and the file itself
-is not distributed here.
+The reference result below uses the fixed epoch-180 snapshot of this run. Because of its
+size (~5.4 GB), the checkpoint is hosted externally instead of being committed to this
+repository:
 
-- Reference checkpoint: `subj01_block8_epoch180.pth` (5,395,046,812 bytes)
-- SHA-256: `9acef11c7d817fa8d306c5116ce1979ac6250acada85320ac84d982d60f46e9b`
+- Download (Quark Drive): https://pan.quark.cn/s/4da4eea7aa06
+- File: `subj01_block8_epoch180.pth` (5,395,046,812 bytes)
+- SHA-256: `9acef11c7d817fa8d306c5116ce1979ac6250ac84d982d60f46e9b`
+- After downloading, place it anywhere (e.g. `checkpoints/subj01/`) and pass its path to
+  the evaluation scripts.
 
 The checkpoint contains only the `voxel2clip` decoder/projector weights needed for
 inference; the diffusion-prior branch is disabled in this configuration.

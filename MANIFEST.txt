@@ -32,6 +32,7 @@ scripts/eval_test982_subj01.sh
 scripts/train_strict_subj01.sh
 scripts/train_subj01.sh
 
-Reference checkpoint identity (file not distributed here):
+Reference checkpoint (hosted externally, not in this repository):
+  download: https://pan.quark.cn/s/4da4eea7aa06
   subj01_block8_epoch180.pth, 5,395,046,812 bytes
   sha256 9acef11c7d817fa8d306c5116ce1979ac6250acada85320ac84d982d60f46e9b
