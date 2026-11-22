@@ -1,0 +1,37 @@
+Brain2Token — subject-1 code-only release
+==========================================
+
+This manifest lists every file in this package. Model weights are NOT included
+(see README.md). The NSD dataset and Qwen3-VL weights are external dependencies.
+
+README.md
+MANIFEST.txt
+requirements.txt
+
+brain2token/audit_splits.py
+brain2token/configurator.py
+brain2token/eval_bidirectional_retrieval.py
+brain2token/eval_brain2token_retrieval.py
+brain2token/models.py
+brain2token/qwen3_vl_embedding.py
+brain2token/qwen_vision_bridge.py
+brain2token/train_brain2token.py
+brain2token/utils.py
+
+docs/split_audit_subj01.local.json
+docs/training_config_subj01.json
+
+results_examples/subj01_paper_config.json
+results_examples/subj01_retrieval_eval_982_batch1.json
+results_examples/subj01_retrieval_eval_982_sanity.json
+
+scripts/audit_splits_subj01.sh
+scripts/eval_bidirectional_subj01.sh
+scripts/eval_pretrained_subj01.sh
+scripts/eval_test982_subj01.sh
+scripts/train_strict_subj01.sh
+scripts/train_subj01.sh
+
+Reference checkpoint identity (file not distributed here):
+  subj01_block8_epoch180.pth, 5,395,046,812 bytes
+  sha256 9acef11c7d817fa8d306c5116ce1979ac6250acada85320ac84d982d60f46e9b

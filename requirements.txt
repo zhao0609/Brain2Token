@@ -1,0 +1,16 @@
+accelerate
+braceexpand
+dalle2-pytorch
+kornia
+matplotlib
+numpy
+open-clip-torch
+pandas
+pillow
+qwen-vl-utils
+scikit-learn
+torch
+torchvision
+tqdm
+transformers
+webdataset
