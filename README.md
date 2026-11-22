@@ -1,4 +1,4 @@
-# Brain2Token — subject-1 training and retrieval code (code-only release)
+# Brain2Token
 
 Brain2Token aligns fMRI responses with intermediate visual-token representations from
 Qwen3-VL-Embedding-8B. This package contains the cleaned subject-1 (subj01) training and
