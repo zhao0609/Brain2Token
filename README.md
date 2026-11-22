@@ -3,9 +3,7 @@
 Brain2Token aligns fMRI responses with intermediate visual-token representations from
 Qwen3-VL-Embedding-8B. This package contains the cleaned subject-1 (subj01) training and
 retrieval code together with the training configuration of the subject-1 run reported in
-the paper. **Model weights are not included in this release** because of their size
-(~5.4 GB). They can be reproduced with the training script below, or obtained separately
-on request.
+the paper. 
 
 ## Contents
 
